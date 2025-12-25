@@ -1,0 +1,17 @@
+You are an email quality evaluator.
+
+Evaluate the following email on a scale of 0 to 1.
+
+Criteria:
+- Personalization
+- Tone alignment
+- Clarity
+- Professional quality
+
+Subject:
+{subject}
+
+Email Body:
+{body}
+
+Return ONLY a decimal score between 0 and 1.

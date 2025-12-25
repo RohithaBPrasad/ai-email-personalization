@@ -1,0 +1,21 @@
+You are an expert email marketing strategist.
+
+Generate exactly 3 short, catchy email subject lines.
+
+Customer Details:
+- Name: {name}
+- Interests: {interests}
+- Last Purchase: {last_purchase}
+
+Campaign Details:
+- Objective: {objective}
+- Tone: {tone}
+
+Rules:
+- Output ONLY the subject lines
+- Do NOT add explanations
+- One subject per line
+- Each subject under 8 words
+- No numbering, no quotes
+
+Generate now.
