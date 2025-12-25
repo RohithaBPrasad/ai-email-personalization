@@ -23,16 +23,15 @@ from mysql.connector import Error
 
 def get_connection():
     try:
-        conn = mysql.connector.connect(
+        return mysql.connector.connect(
             host=os.getenv("MYSQL_HOST"),
             user=os.getenv("MYSQL_USER"),
             password=os.getenv("MYSQL_PASSWORD"),
             database=os.getenv("MYSQL_DB"),
             port=int(os.getenv("MYSQL_PORT", 3306)),
-            ssl_ca="/etc/ssl/cert.pem"  # REQUIRED for PlanetScale
+            ssl_ca="/etc/ssl/cert.pem"  # REQUIRED for PlanetScale on Render
         )
-        return conn
 
     except Error as e:
-        print(f"Database connection error: {e}")
+        print(f"❌ Database connection error: {e}")
         return None
